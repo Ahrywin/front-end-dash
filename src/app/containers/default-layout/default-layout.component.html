@@ -1,0 +1,34 @@
+<app-header [navbarBrandRouterLink]="['']" [fixed]="true"
+	[navbarBrandFull]="{src: 'assets/img/brand/logo.png', width: 128, height: 25, alt: ''}"
+	[navbarBrandMinimized]="{src: 'https://logodix.com/logo/1926420.jpg', width: 30, height: 30, alt: ''}"
+	[sidebarToggler]="'lg'" [asideMenuToggler]="false" [mobileAsideMenuToggler]="false">
+	
+	<ul class="nav navbar-nav ml-auto">
+		<li class="nav-item dropdown mr-4" dropdown placement="bottom right">
+			<a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"
+				dropdownToggle (click)="false">
+				
+			</a>
+			
+		</li>
+	</ul>
+</app-header>
+
+<div class="app-body">
+	<app-sidebar [fixed]="true" [display]="'lg'">
+		<app-sidebar-nav [navItems]="navItems" [perfectScrollbar] [disabled]="sidebarMinimized"></app-sidebar-nav>
+		<app-sidebar-minimizer></app-sidebar-minimizer>
+	</app-sidebar>
+	<!-- Main content -->
+	<main class="main">
+		<cui-breadcrumb>
+		</cui-breadcrumb>
+		<div class="container-fluid">
+			<router-outlet></router-outlet>
+		</div>
+	</main>
+</div>
+<app-footer>
+	<span>&copy;2019 <a href="http://www.mrs.group" target="_blank">MRS&trade;</a></span>
+	<span class="ml-auto">Developed by <a href="https://www.creaworlds.com.mx" target="_blank">CreaWorlds&trade;</a></span>
+</app-footer>
