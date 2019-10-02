@@ -21,7 +21,7 @@ export class DashboardComponent implements OnInit {
 				{ title: "Insumos",value:"1000" },//con enlace
 				{ title: "Diferiencia", value: "1000" },//sin enlace ac 06
 				{ title: "Requisiciones por autorizar", value: "10" },//con enlace ac 08
-				{ title: "Requisiciones sin Compra", value: "20" },//con enlace 
+				{ title: "Requisiciones sin   Compra", value: "20" },//con enlace 
 				{ title: "Compras sin Surtir", value: "3" },
 				{ title: "Almacen", value: "$15,000" },
 				{ title: "Bitacora" },
