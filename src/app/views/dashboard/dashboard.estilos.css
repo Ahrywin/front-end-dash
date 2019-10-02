@@ -1,6 +1,12 @@
-.brand-card-header
+.brand-card-header 
 {
-    background-color:rgb(207, 255, 179);
+    background-color:rgb(255, 249, 196);
+    
+}
+.img-wid
+{
+    width: 32rem;
+    height: 5rem;
 }
 
 .icons-wid

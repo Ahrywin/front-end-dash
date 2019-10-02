@@ -3,11 +3,13 @@
 		<div class="col-lg-9" *ngFor="let obj of widgets; index as inWid">
 			<div class="brand-card">
 				<div class="brand-card-header"  >
-				<label > {{inWid}}</label>
+			<!--<label > {{inWid}}</label>-->
+				<img class="img-wid" src="../../../assets//img//brand-card/liv_petrel.png" >
+
 				</div >
 				<div class="brand-card-body">
 					<div class="" *ngFor="let item of obj.value; index as i" >
-						<span>{{i}}</span>
+
 						<div class="text-value small">{{item.value}}</div>
 						<div class="text-uppercase text-muted small">{{item.title}}</div>
 						<div class="icons-wid">
