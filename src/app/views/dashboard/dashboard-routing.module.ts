@@ -16,15 +16,17 @@ const routes: Routes = [
     component: DashboardComponent,
     data: {
       title: 'Dashboard'
-    }
+    },
   },
   {
     path:'detalle',
     component:DashboardDetalleComponent
+   
   },
   {
     path:'detalle-insumos',
-    component:DetalleInsumosComponent
+    component:DetalleInsumosComponent,
+  
   },
   {
     path:'detalle-reqAut',

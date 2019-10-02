@@ -42,7 +42,7 @@ export const routes: Routes = [
     }
   },
   {
-    path: 'home',
+    path: '',
     component: DefaultLayoutComponent,
     data: {
       title: 'Home'

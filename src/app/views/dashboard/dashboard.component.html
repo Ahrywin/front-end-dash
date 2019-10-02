@@ -3,10 +3,11 @@
 		<div class="col-lg-9" *ngFor="let obj of widgets">
 			<div class="brand-card">
 				<div class="brand-card-header" >
+					<div class=""></div>
 
 				</div >
 				<div class="brand-card-body">
-					<div class="" *ngFor="let item of obj.value; index as i">
+					<div class="" *ngFor="let item of obj.value; index as i" >
 						<span>{{i}}</span>
 						<div class="text-value small">{{item.value}}</div>
 						<div class="text-uppercase text-muted small">{{item.title}}</div>
