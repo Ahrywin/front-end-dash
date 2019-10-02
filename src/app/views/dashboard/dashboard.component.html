@@ -1,10 +1,9 @@
 <div class="animated fadeIn">
 	<div class="row">
-		<div class="col-lg-9" *ngFor="let obj of widgets">
+		<div class="col-lg-9" *ngFor="let obj of widgets; index as inWid">
 			<div class="brand-card">
-				<div class="brand-card-header" >
-					<div class=""></div>
-
+				<div class="brand-card-header"  >
+				<label > {{inWid}}</label>
 				</div >
 				<div class="brand-card-body">
 					<div class="" *ngFor="let item of obj.value; index as i" >
