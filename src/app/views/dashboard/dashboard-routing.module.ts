@@ -17,15 +17,19 @@ const routes: Routes = [
     data: {
       title: 'Dashboard'
     },
+   
   },
   {
     path:'detalle',
-    component:DashboardDetalleComponent
+    component:DashboardDetalleComponent,
    
   },
   {
     path:'detalle-insumos',
     component:DetalleInsumosComponent,
+    data: {
+      title: 'Dashboard'
+    },
   
   },
   {

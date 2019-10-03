@@ -8,22 +8,33 @@
 
 				</div >
 				<div class="brand-card-body">
-					<div class="" *ngFor="let item of obj.value; index as i" >
-
-						<!--<div class="text-value small">{{item.value}}</div>-->
-						<div class="text-uppercase text-muted small">{{item.title}}</div>
-						<div class="icons-wid">
+					<div class="text-center" *ngFor="let item of obj.value; index as i" >
 							
-						<a  class="cui-magnifying-glass"    *ngIf="i==0" routerLink="detalle-insumos"></a>
-						<a  class="cui-magnifying-glass"    *ngIf="i==1" routerLink="detalle-insumos"></a>
-						<a  class="cui-magnifying-glass"    *ngIf="i==2" routerLink="detalle-insumos"></a>
-						 <a  class="cui-magnifying-glass"   *ngIf="i==3" routerLink="detalle-reqAut"></a>
-						 <a  class="cui-magnifying-glass"    *ngIf="i==4" routerLink="ReqsnCompra"></a>
-						 <a  class="cui-magnifying-glass"    *ngIf="i==5" routerLink="Compras-sin-surtir"></a>
-						 <a  class="cui-magnifying-glass"    *ngIf="i==6" routerLink="detalle-insumos"></a>
-						 <a  class="cui-magnifying-glass"    *ngIf="i==7" routerLink="detalle-insumos"></a>
-						 <a  class="cui-magnifying-glass"    *ngIf="i==8" routerLink="Contratos-detalle"></a>
+						<div class="text-value ">{{item.value}}</div>
+						<div class="text-uppercase text-muted small">{{item.title}}</div>
+
+						 <div class="icons-wid-1">
+								<a  class="cui-magnifying-glass  align-bottom"   *ngIf="i==3" routerLink="detalle-reqAut"></a>  
+								<a  class="cui-magnifying-glass  align-bottom"    *ngIf="i==4" routerLink="ReqsnCompra"></a>
+								<a  class="cui-magnifying-glass  align-bottom"    *ngIf="i==5" routerLink="Compras-sin-surtir"></a>
+						 </div>
+							
+
+						<div class="icons-wid-2">
+							
+						<a  class="cui-magnifying-glass align-bottom"    *ngIf="i==0" routerLink="detalle-insumos"></a>
+						<a  class="cui-magnifying-glass align-bottom"    *ngIf="i==1" routerLink="detalle-insumos"></a>
+						<a  class="cui-magnifying-glass  align-bottom"    *ngIf="i==2" routerLink="detalle-insumos"></a>
+							
+					    <a  class="cui-magnifying-glass  align-bottom"    *ngIf="i==6" routerLink="detalle-insumos"></a>
+					    <a  class="cui-magnifying-glass  align-bottom"    *ngIf="i==7" routerLink="detalle-insumos"></a>
+						<a  class="cui-magnifying-glass  align-bottom"    *ngIf="i==8" routerLink="Contratos-detalle"></a>
+						
 						</div> 
+
+						
+							
+							 
 					</div>
 				</div>
 			</div>

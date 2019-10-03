@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DetalleReqAuComponent implements OnInit {
 
+  animales:Array<any> =[
+    {tipo:'perro',nombre:'lisa',edad:10},
+    {tipo:'gato',nombre:'tat',edad:7}
+  ]
   constructor() { }
 
   ngOnInit() {

@@ -56,10 +56,11 @@ export const routes: Routes = [
        
       },
       {
-        path: 'listusers',
-        loadChildren: () => import('./crud/listusers/listususer.module').then(m => m.ListususerModule)
+        path: 'test',
+        loadChildren: () => import('./views/test/test.module').then(m => m.TestModule )
        
       }
+    
     ]
   },
   { path: '**', component: P404Component }
