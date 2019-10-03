@@ -34,6 +34,11 @@ export const navItems: NavData[] = [
 		name: 'Dashboard',
 		url: 'dashboard',
 		icon: 'icon-speedometer'
+	},
+	{
+		name: 'CRUD*',
+		url: 'listusers',
+		icon: 'icon-wrench'
 	}
 	
 ];
