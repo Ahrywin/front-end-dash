@@ -34,11 +34,6 @@ export const navItems: NavData[] = [
 		name: 'Dashboard',
 		url: 'dashboard',
 		icon: 'icon-speedometer'
-	},
-	{
-		name: 'test',
-		url: 'test',
-		icon: 'icon-speedometer'
 	}
 	
 ];

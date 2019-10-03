@@ -9,44 +9,53 @@ import {ComprasSinSurtirComponent} from './compras-sin-surtir/compras-sin-surtir
 import {ContratosDetalleComponent} from './contratos-detalle/contratos-detalle.component';
 
 import { dashCaseToCamelCase } from '@angular/compiler/src/util';
+import { DefaultLayoutComponent } from '../../containers';
 
 const routes: Routes = [
   {
     path: '',
     component: DashboardComponent,
     data: {
-      title: 'Dashboard'
+      title: 'dashboard'
     },
    
   },
-  {
-    path:'detalle',
-    component:DashboardDetalleComponent,
-   
-  },
+
   {
     path:'detalle-insumos',
     component:DetalleInsumosComponent,
     data: {
-      title: 'Dashboard'
+      title: 'Insumos'
     },
   
   },
   {
     path:'detalle-reqAut',
-    component:DetalleReqAuComponent
+    component:DetalleReqAuComponent,
+    data: {
+      title: 'Requisiciones Autorizadas'
+    },
   },
   {
     path:'ReqsnCompra',
-    component:ReqSinCompraComponent
+    component:ReqSinCompraComponent,
+    data: {
+      title: 'Requisiciones sin compra'
+    },
   },
   {
     path:'Compras-sin-surtir',
-    component:ComprasSinSurtirComponent
+    component:ComprasSinSurtirComponent,
+    data: {
+      title: 'Compras sin surtir'
+    },
   },
   {
     path:'Contratos-detalle',
-    component:ContratosDetalleComponent
+    component:ContratosDetalleComponent,
+    data: {
+      title: 'Contratos'
+    },
   }
 ];
 

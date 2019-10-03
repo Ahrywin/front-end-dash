@@ -7,6 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DetalleInsumosComponent implements OnInit {
 
+
+
+  expIns: Array<any>=[
+    {clave:'INV_INI_064', desc:'PIJA 8" X 2"',unidad:'PZA',estim:0.00,util:0.00,rest:0.00},
+    {clave:'INV_INI_064', desc:'PIJA 8" X 2"',unidad:'PZA',estim:0.00,util:0.00,rest:0.00},
+    {clave:'INV_INI_064', desc:'PIJA 8" X 2"',unidad:'PZA',estim:0.00,util:0.00,rest:0.00},
+    {clave:'INV_INI_064', desc:'PIJA 8" X 2"',unidad:'PZA',estim:0.00,util:0.00,rest:0.00}
+  ]
   constructor() { }
 
   ngOnInit() {

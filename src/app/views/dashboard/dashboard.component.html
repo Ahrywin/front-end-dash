@@ -22,7 +22,7 @@
 
 						<div class="icons-wid-2">
 							
-						<a  class="cui-magnifying-glass align-bottom"    *ngIf="i==0" routerLink="detalle-insumos"></a>
+						<a  class="cui-magnifying-glass align-bottom"    *ngIf="i==0" routerLink="detalle-insumos"[routerLinkActive]="'active'" ></a>
 						<a  class="cui-magnifying-glass align-bottom"    *ngIf="i==1" routerLink="detalle-insumos"></a>
 						<a  class="cui-magnifying-glass  align-bottom"    *ngIf="i==2" routerLink="detalle-insumos"></a>
 							
@@ -45,5 +45,6 @@
 	
 </div>
 
-
 <router-outlet></router-outlet>
+
+
