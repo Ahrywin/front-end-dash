@@ -53,7 +53,13 @@ export const routes: Routes = [
         path: 'dashboard',
         loadChildren: () => import('./views/dashboard/dashboard.module').then(m => m.DashboardModule)
        
+      },
+      {
+        path: 'test',
+        loadChildren: () => import('./views/test/test.module').then(m => m.TestModule )
+       
       }
+    
     ]
   },
   { path: '**', component: P404Component }
