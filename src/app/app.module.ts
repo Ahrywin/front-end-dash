@@ -6,6 +6,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
 import { PERFECT_SCROLLBAR_CONFIG } from 'ngx-perfect-scrollbar';
 import { PerfectScrollbarConfigInterface } from 'ngx-perfect-scrollbar';
+import {HttpClientModule} from '@angular/common/http';
+import { MatSliderModule } from '@angular/material/slider';
+
 
 const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
 	suppressScrollX: true
@@ -42,6 +45,7 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { TabsModule } from 'ngx-bootstrap/tabs';
 import { ChartsModule } from 'ng2-charts';
 import { ListaUsersComponent } from './crud/lista-users/lista-users.component';
+import { HttpClient } from 'selenium-webdriver/http';
 
 
 @NgModule({
@@ -57,7 +61,9 @@ import { ListaUsersComponent } from './crud/lista-users/lista-users.component';
 		BsDropdownModule.forRoot(),
 		TabsModule.forRoot(),
 		ChartsModule,
-		AppRoutingModule
+		HttpClientModule,
+		AppRoutingModule,
+		MatSliderModule
 	],
 	declarations: [
 		AppComponent,
