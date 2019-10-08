@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CustomTooltips } from '@coreui/coreui-plugin-chartjs-custom-tooltips';
 import { RouterLink } from '@angular/router';
+import { TestserviceService } from '../../servicios/testservice.service';
 @Component({
 	templateUrl: 'dashboard.component.html',
 	styleUrls: ['dashboard.estilos.css']
@@ -13,6 +14,73 @@ export class DashboardComponent implements OnInit {
 	ngOnInit(): void {
 
 	}
+	
+
+	constructor(private testserviceService:TestserviceService)
+  {
+  }
+  page:number=1;
+  personas: any;
+  unoservi:any;
+
+getAlljson()
+{
+  this.testserviceService.getjson()
+  .subscribe(todos=>{
+    this.personas=todos;
+
+
+
+});
+}
+getTask()
+{
+  this.testserviceService.getunjson('12')
+  .subscribe(todo => {
+    this.unoservi=todo;
+  })
+
+}
+createTask()
+{
+  const task= {
+    userId: '1',
+    id: '12',
+    title: 'prueba',
+    completed: true
+  };
+  this.testserviceService.createTask(task)
+  .subscribe((newTask) => {
+    console.log(newTask);
+  });
+}
+
+UpdateTask()
+{
+  const task={
+    userId: '1',
+    id: '12',
+   
+    title: 'Update test',
+    completed: true
+  }
+  this.testserviceService.updateTask(task)
+  .subscribe(todo=>{
+    console.log(todo);
+  });
+}
+deleteTask(){
+  this.testserviceService.DeleteTask('1')
+  .subscribe((data) => {
+    console.log(data);
+  });
+}
+
+
+  
+
+
+
 	
 	public widgets: any = [
 		{

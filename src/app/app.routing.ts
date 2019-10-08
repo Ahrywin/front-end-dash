@@ -9,10 +9,12 @@ import { P500Component } from './views/error/500.component';
 import { RegisterComponent } from './views/register/register.component';
 import { ListaUsersComponent } from './crud/lista-users/lista-users.component';
 
-export const routes: Routes = [
-  
- 
-      
+export const routes: Routes = [  
+  {
+    path: '',
+    redirectTo: 'dashboard',
+    pathMatch: 'full',
+  }, 
   {
     path: '404',
     component: P404Component,
@@ -27,8 +29,6 @@ export const routes: Routes = [
       title: 'Page 500'
     }
   },
-  
- 
   {
     path: 'register',
     component: RegisterComponent,
@@ -48,10 +48,10 @@ export const routes: Routes = [
         path: 'dashboard',
         loadChildren: () => import('./views/dashboard/dashboard.module').then(m => m.DashboardModule),
         data: {
-          title: 'dashboard'
-        }
-       
+          title: 'Dashboard'
+        }  
       }
+      
     
     ]
     

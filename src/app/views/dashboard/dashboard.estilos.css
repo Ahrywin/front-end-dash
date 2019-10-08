@@ -22,3 +22,25 @@
    
   
 }
+
+@media (min-width: 1024px) 
+{
+    .img-wid
+    {
+        width: 16rem;
+        height: 4rem;
+
+    }
+    .text-value
+    {
+        font-size: 15px;
+    }
+    .text-uppercase
+    {
+        font-size: 65%;
+
+    }
+   
+  }
+
+ 

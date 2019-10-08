@@ -9,7 +9,7 @@ import { navItems } from '../../_nav';
 })
 export class DefaultLayoutComponent implements OnDestroy {
   public navItems = navItems;
-  public sidebarMinimized = true;
+  public sidebarMinimized = false;
   private changes: MutationObserver;
   public element: HTMLElement;
   constructor(@Inject(DOCUMENT) _document?: any) {

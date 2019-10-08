@@ -1,3 +1,5 @@
+
+
 <div class="animated fadeIn">
 <h1 class="display-4 text-center" > Detalle de la explosión de insumos</h1>
 <table class="table table-hover">
@@ -12,8 +14,9 @@
           </tr>
         </thead>
 
+        
         <tbody class="scroll">
-          <tr *ngFor="let item of personas; index as i">
+          <tr *ngFor="let item of personas">
             <th>{{item.userId}}</th>
             <td>{{item.id}}</td>
             <td>{{item.title}}</td>
@@ -26,7 +29,11 @@
           </tr>  
         </tbody>
       </table>
+     
+
 </div>
+
+
 <button (click)="getAlljson()">getAlljson()</button>
 <button (click)="getTask()">getunjson()</button>
 <button (click)="createTask()">createTask()</button>

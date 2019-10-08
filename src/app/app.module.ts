@@ -8,6 +8,7 @@ import { PERFECT_SCROLLBAR_CONFIG } from 'ngx-perfect-scrollbar';
 import { PerfectScrollbarConfigInterface } from 'ngx-perfect-scrollbar';
 import {HttpClientModule} from '@angular/common/http';
 import { MatSliderModule } from '@angular/material/slider';
+import { DataTablesModule } from 'angular-datatables';
 
 
 const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
@@ -47,6 +48,8 @@ import { ChartsModule } from 'ng2-charts';
 import { ListaUsersComponent } from './crud/lista-users/lista-users.component';
 import { HttpClient } from 'selenium-webdriver/http';
 
+import {NgxPaginationModule} from 'ngx-pagination';
+
 
 @NgModule({
 	imports: [
@@ -63,7 +66,9 @@ import { HttpClient } from 'selenium-webdriver/http';
 		ChartsModule,
 		HttpClientModule,
 		AppRoutingModule,
-		MatSliderModule
+		MatSliderModule,
+		NgxPaginationModule,
+		DataTablesModule
 	],
 	declarations: [
 		AppComponent,

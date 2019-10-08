@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-contratos-detalle',
@@ -6,6 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contratos-detalle.component.scss']
 })
 export class ContratosDetalleComponent implements OnInit {
+  
+
+  
+
+
 
   constructor() { }
 
