@@ -1,11 +1,11 @@
-<app-header [navbarBrandRouterLink]="['/dashboard']" [fixed]="true"
+<app-header [navbarBrandRouterLink]="['/dashboard']" [fixed]="false"
 	[navbarBrandFull]="{src: 'assets/img/brand/logo.png', width: 152, height: 65}"
 	[sidebarToggler]="'lg'" [asideMenuToggler]="false" [mobileAsideMenuToggler]="false">		
 </app-header>
 
 
 <div class="app-body">
-	<app-sidebar [fixed]="false" [display]="'sm'">
+	<app-sidebar [fixed]="true" [display]="'sm'">
 		<app-sidebar-nav [navItems]="navItems" [perfectScrollbar] [disabled]="sidebarMinimized"></app-sidebar-nav>
 		
 	</app-sidebar>

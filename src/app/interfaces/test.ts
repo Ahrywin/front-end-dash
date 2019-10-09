@@ -1,9 +1,11 @@
 //modelo de datos 
 export interface Test {
 
-    userId: string,
-    id: string,
+    id?: string,
+    nombreProyecto:string
+    presupuesto: string,
+    totalExpl: string,
     title: string,
-    completed: boolean
+    insumos: boolean
 
 }

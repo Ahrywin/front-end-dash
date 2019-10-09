@@ -12,10 +12,10 @@ export class DetalleInsumosComponent implements OnInit {
   
   constructor(private testserviceService:TestserviceService)
   {
-    this.getAlljson();
+   // this.getAlljson();
 
   }
-  page:number=1;
+ // page:number=1;
   
   personas: any;
 getAlljson()
@@ -28,6 +28,7 @@ getAlljson()
 
 });
 }
+/*
 getTask()
 {
   this.testserviceService.getunjson('12')
@@ -70,10 +71,10 @@ deleteTask(){
     console.log(data);
   });
 }
-
+*/
   ngOnInit() {
 
-    this.getAlljson();
+   // this.getAlljson();
   }
 
   

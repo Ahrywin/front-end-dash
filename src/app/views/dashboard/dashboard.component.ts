@@ -11,13 +11,18 @@ import { TestserviceService } from '../../servicios/testservice.service';
 export class DashboardComponent implements OnInit {
 	
 	private CurrentMonth: number = new Date().getMonth();
-	ngOnInit(): void {
+  ngOnInit() {
 
-	}
+    //this.getTask();
+    this.getAlljson();
+  }
+
 	
 
 	constructor(private testserviceService:TestserviceService)
   {
+    
+    
   }
   page:number=1;
   personas: any;
@@ -33,9 +38,11 @@ getAlljson()
 
 });
 }
+/*
+
 getTask()
 {
-  this.testserviceService.getunjson('12')
+  this.testserviceService.getunjson('1')
   .subscribe(todo => {
     this.unoservi=todo;
   })
@@ -75,6 +82,7 @@ deleteTask(){
     console.log(data);
   });
 }
+*/
 
 
   
@@ -106,3 +114,4 @@ deleteTask(){
 
 	
 }
+
